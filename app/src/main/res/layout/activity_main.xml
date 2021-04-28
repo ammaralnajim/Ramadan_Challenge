@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/body_of_lantern"
+        android:layout_width="@dimen/with_normal"
+        android:layout_height="@dimen/height_normal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_body"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_editor_absoluteX="112dp"
+        app:layout_editor_absoluteY="488dp"
+        style="@style/tint_yellow" />
+
+    <ImageView
+        android:id="@+id/logo_ramadan"
+        android:layout_width="@dimen/with_small"
+        android:layout_height="@dimen/height_small"
+        android:src="@drawable/ic_ramadan"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.889"
+        style="@style/tint_yellow" />
+
+    <ImageView
+        android:id="@+id/decorate_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_decorate"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/tint_yellow" />
+    <ImageView
+        android:id="@+id/decorate_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_decorate"
+        android:visibility="invisible"
+        android:scaleX="-1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/tint_yellow"/>
+
+    <ImageView
+        android:id="@+id/cover_of_lantern"
+        android:layout_width="@dimen/width_large"
+        android:layout_height="@dimen/height_large"
+        android:src="@drawable/ic_cover"
+        app:layout_constraintBottom_toTopOf="@+id/body_of_lantern"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_editor_absoluteX="94dp"
+        app:layout_editor_absoluteY="345dp"
+        style="@style/tint_yellow" />
+</androidx.constraintlayout.motion.widget.MotionLayout>

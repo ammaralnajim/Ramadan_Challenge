@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="with_normal">159dp</dimen>
+    <dimen name="height_normal">214dp</dimen>
+    <dimen name="with_small">17dp</dimen>
+    <dimen name="height_small">22dp</dimen>
+    <dimen name="width_large">211dp</dimen>
+    <dimen name="height_large">127dp</dimen>
+    <dimen name="new_size">200dp</dimen>
+    <dimen name="height_new_of_logo">200dp</dimen>
+</resources>
